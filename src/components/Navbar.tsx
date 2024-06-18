@@ -1,5 +1,5 @@
 interface IProps {
-  setpage: (val: string) => void;
+  setpage: (val: "HomePage" | "ProductsPage" | "AboutPage"| "UseEffectPage") => void;
 }
 
 const Navbar = ({ setpage }: IProps) => {
@@ -23,6 +23,12 @@ const Navbar = ({ setpage }: IProps) => {
           onClick={() => setpage("AboutPage")}
         >
           AboutUs
+        </li>
+        <li
+          className="hover:text-indigo-500 text-xl  duration-300"
+          onClick={() => setpage("UseEffectPage")}
+        >
+          UseEffetHooks
         </li>
       </ul>
     </>

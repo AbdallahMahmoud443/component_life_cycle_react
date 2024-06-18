@@ -4,9 +4,10 @@ import AboutusPage from "./components/AboutusPage";
 import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
 import ProductsPage from "./components/ProductsPage";
+import HooksPage from "./components/HooksPage";
 
 function App() {
-  const [page, setPage] = useState<string>("HomePage");
+  const [page, setPage] = useState<"HomePage" | "ProductsPage" | "AboutPage"| "UseEffectPage">("HomePage");
   return (
     <>
       <h1 className="bg-white text-slate-800 p-2 rounded-md w-fit text-center font-bold text-4xl">
@@ -16,6 +17,7 @@ function App() {
       {page === "HomePage" && <HomePage />}
       {page === "ProductsPage" && <ProductsPage />}
       {page === "AboutPage" && <AboutusPage />}
+      {page === "UseEffectPage" && <HooksPage/>}
     </>
   );
 }
