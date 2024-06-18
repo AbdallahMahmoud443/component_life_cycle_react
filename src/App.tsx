@@ -14,9 +14,9 @@ function App() {
         Component Life Cycle (In React)
       </h1>
       <Navbar setpage={setPage} />
-      {page === "HomePage" && <HomePage />}
-      {page === "ProductsPage" && <ProductsPage />}
-      {page === "AboutPage" && <AboutusPage />}
+      {/* {page === "HomePage" && <HomePage />} */}
+      {/* {page === "ProductsPage" && <ProductsPage />} */}
+      {/* {page === "AboutPage" && <AboutusPage />} */}
       {page === "UseEffectPage" && <HooksPage/>}
     </>
   );
